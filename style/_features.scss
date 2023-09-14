@@ -2,6 +2,7 @@
     background-image: url('../img/features/features-bg.jpg');
     background-repeat: no-repeat;
 
+    // Rowfd
     &__row {
         @media(max-width: 480px) {
             flex-direction: column;
