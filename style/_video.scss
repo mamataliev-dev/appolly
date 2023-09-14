@@ -1,8 +1,7 @@
 .video {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     height: 477px;
     background-image: url('../img/video/video-bg.jpg');
-    background-repeat: no-repeat;
 
     position: relative;
 
@@ -18,11 +17,15 @@
         position: absolute;
         bottom: 0%;
         left: 50%;
-        transform: translate(-50%, 47%);
+        transform: translate(-50%, 57%);
 
         @media (max-width: 480px) {
             transform: translate(-50%, 40%);
         }
+    }
+
+    @media(max-width: 100px) {
+        margin-bottom: 100px;
     }
 
     @media(max-width: 480px) {

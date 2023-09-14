@@ -382,14 +382,12 @@ body.active {
 .header {
   padding-top: 35px;
   background-image: url("../img/header/main-bg.jpg");
-  background-repeat: no-repeat;
   position: relative;
   overflow-x: hidden;
 }
 @media (max-widht: 540px) {
   .header {
     background-image: url("../img/header/main-bg-mobile.jpg");
-    background-repeat: no-repeat;
   }
 }
 
@@ -542,7 +540,6 @@ body.active {
 
 .features {
   background-image: url("../img/features/features-bg.jpg");
-  background-repeat: no-repeat;
 }
 @media (max-width: 480px) {
   .features__row {
@@ -718,10 +715,9 @@ body.active {
 }
 
 .video {
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   height: 477px;
   background-image: url("../img/video/video-bg.jpg");
-  background-repeat: no-repeat;
   position: relative;
 }
 .video__title {
@@ -734,11 +730,16 @@ body.active {
   position: absolute;
   bottom: 0%;
   left: 50%;
-  transform: translate(-50%, 47%);
+  transform: translate(-50%, 57%);
 }
 @media (max-width: 480px) {
   .video__img {
     transform: translate(-50%, 40%);
+  }
+}
+@media (max-width: 100px) {
+  .video {
+    margin-bottom: 100px;
   }
 }
 @media (max-width: 480px) {
