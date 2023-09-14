@@ -2,7 +2,9 @@
     background-image: url('../img/features/features-bg.jpg');
 
     &__row {
-        flex-direction: column;
+        @media(max-width: 480px) {
+            flex-direction: column;
+        }
     }
 
     &__items {

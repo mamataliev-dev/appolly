@@ -541,8 +541,10 @@ body.active {
 .features {
   background-image: url("../img/features/features-bg.jpg");
 }
-.features__row {
-  flex-direction: column;
+@media (max-width: 480px) {
+  .features__row {
+    flex-direction: column;
+  }
 }
 .features__items {
   display: flex;
