@@ -1,0 +1,69 @@
+.features {
+    background-image: url('../img/features/features-bg.jpg');
+
+    &__row {
+        flex-direction: column;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media(max-width: 480px) {
+            margin-top: 30px;
+        }
+    }
+
+    &__title {
+        color: $white !important;
+    }
+
+    &__subtitle {
+        color: $white !important;
+    }
+
+    &__icon_box {
+        width: 50px;
+        margin-right: 20px;
+    }
+
+    &__img {
+        max-width: 375px;
+
+        @media(max-width: 1280px) {
+            height: 670px;
+        }
+
+        @media(max-width: 1000px) {
+            height: 650px;
+        }
+
+        @media(max-width: 768px) {
+            height: 468px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item_title {
+        max-width: 221.62px;
+    }
+
+    &__item_subtitle {
+        max-width: 297px;
+    }
+}
+
+.featuresSwiper {
+    width: 90%;
+    height: 450px;
+
+    @media(max-width: 480px) {
+        width: 80%;
+    }
+}

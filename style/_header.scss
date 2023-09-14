@@ -1,0 +1,112 @@
+.header {
+    padding-top: 35px;
+    background-image: url('../img/header/main-bg.jpg');
+
+    position: relative;
+    overflow-x: hidden;
+
+    @media(max-widht: 540px) {
+        background-image: url('../img/header/main-bg-mobile.jpg');
+    }
+}
+
+.header-cont {
+    display: flex;
+    align-items: center;
+
+    height: 55rem;
+
+    &__row {
+        @media(max-width: 540px) {
+            flex-direction: column;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(0, 30%);
+
+        width: 561px;
+        height: 725px;
+
+        @media(max-width: 1024px) {
+            width: 500px;
+            height: 600px;
+            transform: translate(0, 35%);
+        }
+
+        @media(max-width: 768px) {
+            max-width: 282px;
+            max-height: 423px;
+            transform: translate(0, 75%);
+        }
+
+        @media(max-width: 540px) {
+            transform: translate(0%, 120%);
+        }
+
+        @media(max-width: 480px) {
+            max-width: 450px;
+            max-height: 510px;
+            transform: translate(15%, 100%);
+        }
+
+        @media(max-width: 412px) {
+            transform: translate(27%, 100%);
+        }
+
+        @media(max-width: 390px) {
+            transform: translate(30%, 110%);
+        }
+
+        @media(max-width: 320px) {
+            transform: translate(37%, 110%);
+        }
+    }
+
+    &__txt {
+        background: $white;
+        padding: 40px 26px;
+        border-top-right-radius: 20%;
+
+        position: relative;
+
+        @media(max-width: 768px) {
+            padding: 16px 16px;
+        }
+    }
+
+    &__title {
+        font-weight: bold;
+        color: $blue;
+        margin-bottom: 10px;
+    }
+
+    &__dtitle {
+        color: $black;
+        margin-bottom: 5px;
+        margin-top: 40px;
+
+        @media(max-width: 768px) {
+            margin-top: 20px;
+        }
+
+        @media(max-width: 390px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__dimg {
+        width: 149px;
+        height: 47px;
+    }
+
+    @media(max-width: 540px) {
+        height: 60rem;
+        align-items: flex-start;
+
+        margin-top: 90px;
+    }
+}

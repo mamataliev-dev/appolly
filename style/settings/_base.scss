@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $gray;
+
+    position: relative;
+    height: 100%;
+}
+
+body.active {
+    overflow: hidden;
+}
+
+.navbar-brand {
+    margin-right: 0;
+}
+
+.padding {
+    padding: 120px 0px;
+
+    @media(max-width: 480px) {
+        padding: 60px 0px;
+    }
+}
+
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+.h2 {
+    color: $black !important;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    @media(max-width: 540px) {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+.h5 {
+    margin-bottom: 0px;
+}
+
+.none {
+    display: none;
+}
+
+.subtitle {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 18px;
+    text-align: center;
+
+    @media(max-width: 540px) {
+        max-width: 400px;
+    }
+}
+
+.box-margin {
+    margin-top: 60px;
+}
+
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background-color: $blue;
+}
+
+.swiper-pagination-bullet.active {
+    opacity: 1;
+}
+
+.swiper-button-next {
+    width: 84px;
+}
+
+.swiper-button-prev {
+    width: 84px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 0px;
+}

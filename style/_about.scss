@@ -1,0 +1,48 @@
+.about {
+    &__img {
+        max-width: 386px;
+        max-height: 526px;
+
+        @media(max-width: 768px) {
+            max-width: 238px;
+            max-height: 359px;
+        }
+    }
+
+    &__row {
+        @media(max-width:540px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__item_title {
+        color: $black;
+    }
+
+    &__grid {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+        @media(max-width:540px) {
+            margin-top: 40px;
+        }
+    }
+
+    &__item {
+        padding: 19px 25px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
+
+        @media(max-width: 768px) {
+            padding: 18px 15px;
+        }
+    }
+
+    &__item_subtitle-none {
+        @media(max-width: 768px) {
+            display: none;
+        }
+    }
+}
