@@ -1,12 +1,14 @@
 .header {
     padding-top: 35px;
     background-image: url('../img/header/main-bg.jpg');
+    background-repeat: no-repeat;
 
     position: relative;
     overflow-x: hidden;
 
     @media(max-widht: 540px) {
         background-image: url('../img/header/main-bg-mobile.jpg');
+        background-repeat: no-repeat;
     }
 }
 

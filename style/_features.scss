@@ -1,5 +1,6 @@
 .features {
     background-image: url('../img/features/features-bg.jpg');
+    background-repeat: no-repeat;
 
     &__row {
         @media(max-width: 480px) {

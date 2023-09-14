@@ -382,12 +382,14 @@ body.active {
 .header {
   padding-top: 35px;
   background-image: url("../img/header/main-bg.jpg");
+  background-repeat: no-repeat;
   position: relative;
   overflow-x: hidden;
 }
 @media (max-widht: 540px) {
   .header {
     background-image: url("../img/header/main-bg-mobile.jpg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -540,6 +542,7 @@ body.active {
 
 .features {
   background-image: url("../img/features/features-bg.jpg");
+  background-repeat: no-repeat;
 }
 @media (max-width: 480px) {
   .features__row {
@@ -718,6 +721,7 @@ body.active {
   margin-bottom: 100px;
   height: 477px;
   background-image: url("../img/video/video-bg.jpg");
+  background-repeat: no-repeat;
   position: relative;
 }
 .video__title {
