@@ -2,19 +2,12 @@
     margin-top: 120px;
     background: $black;
 
-    @media(max-width: 540px) {
-        padding-top: 60px;
-    }
+    &__wrapper {
+        position: relative;
 
-    @media(max-width: 480px) {
-        margin-top: 220px;
+        max-width: 1440px;
+        margin: 0 auto;
     }
-
-    @media(max-width: 412px) {
-        margin-top: 160px;
-    }
-
-    position: relative;
 
     &-cont {
         margin-top: 160px;
@@ -32,7 +25,7 @@
         transform: translate(-50%, -50%);
 
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
 
         width: 90%;
@@ -171,5 +164,17 @@
         span {
             color: $white;
         }
+    }
+
+    @media(max-width: 540px) {
+        padding-top: 60px;
+    }
+
+    @media(max-width: 480px) {
+        margin-top: 220px;
+    }
+
+    @media(max-width: 412px) {
+        margin-top: 160px;
     }
 }

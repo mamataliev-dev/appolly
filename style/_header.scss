@@ -2,13 +2,20 @@
     padding-top: 35px;
     background-image: url('../img/header/main-bg.jpg');
 
-    position: relative;
     overflow-x: hidden;
+
+    &__wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+
+        position: relative;
+    }
 
     @media(max-widht: 540px) {
         background-image: url('../img/header/main-bg-mobile.jpg');
     }
 }
+
 
 .header-cont {
     display: flex;

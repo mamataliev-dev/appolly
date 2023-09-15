@@ -382,8 +382,12 @@ body.active {
 .header {
   padding-top: 35px;
   background-image: url("../img/header/main-bg.jpg");
-  position: relative;
   overflow-x: hidden;
+}
+.header__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
 }
 @media (max-widht: 540px) {
   .header {
@@ -726,30 +730,49 @@ body.active {
 .video__subtitle {
   color: #fff !important;
 }
-.video__img {
+.video__btn {
   position: absolute;
   bottom: 0%;
   left: 50%;
-  transform: translate(-50%, 57%);
+  transform: translate(-50%, 47%);
+}
+@media (max-width: 1440px) {
+  .video__btn {
+    width: 770px;
+    transform: translate(-50%, 37%);
+  }
+}
+@media (max-width: 540px) {
+  .video__btn {
+    width: 570px;
+  }
 }
 @media (max-width: 480px) {
-  .video__img {
-    transform: translate(-50%, 40%);
+  .video__btn {
+    width: 100%;
+    transform: translate(-50%, 30%);
   }
 }
-@media (max-width: 100px) {
-  .video {
-    margin-bottom: 100px;
-  }
+.video__img {
+  position: relative;
 }
-@media (max-width: 480px) {
-  .video {
-    margin-bottom: 60px;
-  }
+.video__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
 }
 @media (max-width: 390px) {
+  .video__icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 480px) {
   .video {
-    height: 360px;
+    margin-bottom: 100px;
+    height: 420px;
   }
 }
 
@@ -904,22 +927,11 @@ body.active {
 .footer {
   margin-top: 120px;
   background: #232233;
+}
+.footer__wrapper {
   position: relative;
-}
-@media (max-width: 540px) {
-  .footer {
-    padding-top: 60px;
-  }
-}
-@media (max-width: 480px) {
-  .footer {
-    margin-top: 220px;
-  }
-}
-@media (max-width: 412px) {
-  .footer {
-    margin-top: 160px;
-  }
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .footer-cont {
   margin-top: 160px;
@@ -936,7 +948,7 @@ body.active {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 90%;
   background: #fff;
@@ -1062,4 +1074,19 @@ body.active {
 }
 .footer__copyright span {
   color: #fff;
+}
+@media (max-width: 540px) {
+  .footer {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .footer {
+    margin-top: 220px;
+  }
+}
+@media (max-width: 412px) {
+  .footer {
+    margin-top: 160px;
+  }
 }/*# sourceMappingURL=style.css.map */
